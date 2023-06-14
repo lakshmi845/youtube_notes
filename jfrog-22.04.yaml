@@ -12,7 +12,7 @@ First of all add the GPG key by entering the following command.
 ==> $ wget -qO - https://api.bintray.com/orgs/jfrog/keys/gpg/public.key | sudo apt-key add -
 Add jfrog repository in your apt list. Just copy and paste the following command in your terminal.
 
-==> $ echo "deb https://jfrog.bintray.com/artifactory-debs bionic main" | sudo tee /etc/apt/sources.list.d/jfrog.list
+==> $ echo "deb [allow-insecure=yes] https://jfrog.bintray.com/artifactory-debs bionic main" | sudo tee /etc/apt/sources.list.d/jfrog.list
 Let’s then update apt index,
 
 ==> $ sudo apt update
